@@ -1,0 +1,93 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background: #e64997;
+ 
+    background-repeat: no-repeat;
+    background: linear-gradient(
+      42deg,
+      rgba(230, 73, 151, 1) 0,
+      rgba(93, 137, 255, 1) 100%
+    );
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+  }
+  .fl {
+    font-family: Roboto, sans-serif;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+    transform: translateY(0);
+  }
+  .fi {
+    font-family: Roboto, sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    border-radius: 0.2rem;
+    background-color: #fff;
+    border: 2px solid #000;
+    width: 90%;
+    height: auto;
+    display: block;
+    transition: all 0.3s;
+  }
+  .fi:placeholder-shown + .fl {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(-4rem);
+    transform: translateY(-4rem);
+  }
+  #urlInput {
+    font-family: Roboto, sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+    margin: auto;
+    width: 80%;
+    padding: 0px;
+    height: 100%;
+    text-align: center;
+  }
+  .btn {
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 3px;
+    font-family: Roboto, sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+    background: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 12px 20px;
+    text-align: center;
+    transition-duration: 0.15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .btn:hover {
+    background: rgb(254, 175, 246);
+  }
+
+  .btnBox {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .foot{
+    margin-top: 30px;
+  }
