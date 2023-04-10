@@ -1,9 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-
   <meta charset="UTF-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>frogie's arcade 2</title>
   <script src="nggpatch.js"></script>
   <script>
@@ -11,48 +11,48 @@
     (async () => {
       await wasm_bindgen();
     })();
-
     async function getNggGame(url) {
-      document.open();
-      await get_file_from_url_patch_and_load(url);
-      document.close();
-    }
-  </script>
+  document.open();
+  await get_file_from_url_patch_and_load(url);
+  document.close();
+}
+</script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    p {
+      color: white;
+    }
+    h2 {
+      color: white;
+    }
+    h5 {
+      color: white;
+    }
+    body {
+      text-align: center;
+      background: black;
+    }
+    a {
+      text-align: left;
+    }
+    .red-text {
+      color: red;
+    }
+  </style>
 </head>
 <body>
   <div id="urlInput">
-    <form onsubmit="return urlSubmit()"></form><div class="qzvwneOverlay" style="background:#666;opacity:0.0001;position:absolute;cursor:pointer;height:0px;width:0px;left:0px;top:0px;z-index:2"></div>
+    <form onsubmit="return urlSubmit()">
+      <!-- form elements here -->
+    </form>
+    <div class="qzvwneOverlay" style="background:#666;opacity:0.0001;position:absolute;cursor:pointer;height:0px;width:0px;left:0px;top:0px;z-index:2"></div>
     <h2>Click to load</h2>
-    <style>
-      .red-text {
-        color: red;
-      }
-    </style>
-    <h3 style="padding-bottom: 30px">
-    </h3>
+    <h3 style="padding-bottom: 30px"></h3>
     <div class="btnBox">
-        <style>
-  p{
-    color: white
-  }
-  h2{
-    color: white
-  }
-  h5{
-    color: white;
-  }
-  body{
-    text-align: center;
-    background: black;
-  }
-  a{
-    text-align: left;
-  }
-</style>
-      <button class="btn" onclick="getNggGame('https://now.gg/play/roblox-corporation/5349/roblox');">Launch Roblox</button>
-
-      <!-- <button class="btn" onclick="getNggGame('https://now.gg/play/');"></button> -->
+      <button class="btn" onclick="getNggGame('https://now.gg/play/roblox-corporation/5349/roblox')">Launch Roblox</button>
+      <!-- <button class="btn" onclick="getNggGame('https://now.gg/play/')"></button> -->
     </div>
   </div>
+</body>
+</html> 
